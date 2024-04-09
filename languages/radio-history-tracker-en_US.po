@@ -1,0 +1,448 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Radio History Tracker\n"
+"POT-Creation-Date: 2024-04-09 11:26+0200\n"
+"PO-Revision-Date: 2024-04-09 11:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: radio-history-tracker.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: admin/vendor\n"
+
+#: admin/class-radio-history-tracker-admin.php:102
+msgid "No data available."
+msgstr "No data available."
+
+#: admin/class-radio-history-tracker-admin.php:103
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#: admin/class-radio-history-tracker-admin.php:104
+msgid "Loading..."
+msgstr "Loading..."
+
+#: admin/class-radio-history-tracker-admin.php:105
+msgid "Couldn't process metadata."
+msgstr "Couldn't process metadata."
+
+#: admin/class-radio-history-tracker-admin.php:106
+msgid "History"
+msgstr "History"
+
+#: admin/class-radio-history-tracker-admin.php:107
+#: admin/partials/class-track-meta-boxes.php:37
+msgid "Played at"
+msgstr "Played at"
+
+#: admin/class-radio-history-tracker-admin.php:108
+msgid "Artist"
+msgstr "Artist"
+
+#: admin/class-radio-history-tracker-admin.php:109
+msgid "Title"
+msgstr "Title"
+
+#: admin/class-radio-history-tracker-admin.php:110
+msgid "Artwork"
+msgstr "Artwork"
+
+#: admin/class-radio-history-tracker-admin.php:111
+msgid "N/A"
+msgstr "N/A"
+
+#: admin/class-radio-history-tracker-admin.php:158
+#: admin/partials/radio-history-tracker-admin-display.php:17
+msgid "Radio History Tracker settings"
+msgstr "Radio History Tracker settings"
+
+#. Plugin Name of the plugin/theme
+#: admin/class-radio-history-tracker-admin.php:159
+msgid "Radio History Tracker"
+msgstr "Radio History Tracker"
+
+#: admin/class-radio-history-tracker-admin.php:175
+msgid "Post type settings"
+msgstr "Post type settings"
+
+#: admin/class-radio-history-tracker-admin.php:182
+#: admin/class-radio-history-tracker-admin.php:232
+msgid "Make Radio Stream publicly visible"
+msgstr "Make Radio Stream publicly visible"
+
+#: admin/class-radio-history-tracker-admin.php:190
+#: admin/class-radio-history-tracker-admin.php:239
+msgid "Make Tracks publicly visible"
+msgstr "Make Tracks publicly visible"
+
+#: admin/class-radio-history-tracker-admin.php:198
+#: admin/class-radio-history-tracker-admin.php:246
+msgid "Make Artists publicly visible"
+msgstr "Make Artists publicly visible"
+
+#: admin/class-radio-history-tracker-admin.php:206
+msgid "Cron settings"
+msgstr "Cron settings"
+
+#: admin/class-radio-history-tracker-admin.php:213
+msgid "History fetch interval (in minutes)"
+msgstr "History fetch interval (in minutes)"
+
+#: admin/class-radio-history-tracker-admin.php:253
+msgid "Set the interval in minutes at which the history should be fetched."
+msgstr "Set the interval in minutes at which the history should be fetched."
+
+#: admin/partials/class-radio-stream-meta-boxes.php:28
+msgid "Stream details"
+msgstr "Stream details"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:37
+msgid "Stream type"
+msgstr "Stream type"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:39
+msgid "Shoutcast"
+msgstr "Shoutcast"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:45
+msgid "Stream metadata type"
+msgstr "Stream metadata type"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:47
+msgid "XML"
+msgstr "XML"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:48
+msgid "JSON"
+msgstr "JSON"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:49
+msgid "HTML"
+msgstr "HTML"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:50
+msgid "Stream"
+msgstr "Stream"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:53
+msgid ""
+"<ul><li>XML: Endpoint with XML containing a &lt;SONGHISTORY&gt;&lt;SONG&gt;"
+"&lt;/SONG&gt;&lt;/SONGHISTORY&gt; structure. Example: /stats?sid=1, /played?"
+"type=xml of /admin.cgi?sid=1&mode=viewxml&page=4 (with username and "
+"password)</li><li>JSON: Endpoint with JSON format data for track history. "
+"Example: /stats?sid=1&json=1 or /played?type=json</li><li>HTML: Endpoint "
+"with HTML containing an HTML table with track history. Example: /played</"
+"li><li>Stream: The stream endpoint itself. It will get the current playing "
+"track. The system will create a history by played track.</li></ul>"
+msgstr ""
+"<ul><li>XML: Endpoint with XML containing a &lt;SONGHISTORY&gt;&lt;SONG&gt;"
+"&lt;/SONG&gt;&lt;/SONGHISTORY&gt; structure. Example: /stats?sid=1, /played?"
+"type=xml of /admin.cgi?sid=1&mode=viewxml&page=4 (with username and "
+"password)</li><li>JSON: Endpoint with JSON format data for track history. "
+"Example: /stats?sid=1&json=1 or /played?type=json</li><li>HTML: Endpoint "
+"with HTML containing an HTML table with track history. Example: /played</"
+"li><li>Stream: The stream endpoint itself. It will get the current playing "
+"track. The system will create a history by played track.</li></ul>"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:57
+msgid "Metadata endpoint"
+msgstr "Metadata Eendpoint"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:62
+msgid "Username (optional)"
+msgstr "Username (optional)"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:67
+msgid "Password (optional)"
+msgstr "Password (optional)"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:146
+#: admin/partials/class-radio-stream-meta-boxes.php:149
+#: admin/partials/class-radio-stream-meta-boxes.php:155
+msgid "Test results"
+msgstr "Test results"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:158
+msgid "Close modal"
+msgstr "Close modal"
+
+#: admin/partials/class-radio-stream-meta-boxes.php:159
+msgid "Close"
+msgstr "Close"
+
+#: admin/partials/class-track-meta-boxes.php:28
+msgid "Track details"
+msgstr "Track details"
+
+#: admin/partials/class-track-meta-boxes.php:39
+msgid "Add played at. Format: YYYY-MM-DDThh:mm"
+msgstr "Add played at. Format: YYYY-MM-DDThh:mm"
+
+#: admin/partials/class-track-meta-boxes.php:43
+msgid "Most recent played at"
+msgstr "Most recent played at"
+
+#: admin/partials/class-track-meta-boxes.php:48
+msgid "Total plays"
+msgstr "Total plays"
+
+#: admin/partials/class-track-meta-boxes.php:53
+msgid "Track slug"
+msgstr "Track slug"
+
+#: admin/partials/class-track-meta-boxes.php:58
+msgid "Radio stream"
+msgstr "Radio stream"
+
+#: admin/partials/class-track-meta-boxes.php:172
+msgid "Remove"
+msgstr "Remove"
+
+#: admin/partials/class-track-meta-boxes.php:176
+msgid "Add timestamp"
+msgstr "Add timestamp"
+
+#: admin/partials/radio-history-tracker-admin-display.php:22
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: includes/class-artwork-manager.php:21
+msgid "Unable to retrieve artwork."
+msgstr "Unable to retrieve artwork."
+
+#: includes/class-radio-history-tracker-cron.php:46
+#, php-format
+msgid "Every %d minutes"
+msgstr "Every %d minutes"
+
+#: includes/class-track-manager.php:51 includes/class-track-manager.php:56
+#: includes/class-track-manager.php:83
+msgid "Unknown title"
+msgstr "Unknown title"
+
+#: includes/strategies/class-stream-strategy-manager.php:21
+msgid "Unsupported stream type: "
+msgstr "Unsupported stream type: "
+
+#: includes/strategies/shoutcast/class-shoutcast-strategy.php:76
+msgid "Unsupported metadata type: "
+msgstr "Unsupported metadata type: "
+
+#: includes/strategies/shoutcast/metadata/class-shoutcast-html-metadata-strategy.php:17
+#: includes/strategies/shoutcast/metadata/class-shoutcast-json-metadata-strategy.php:18
+#: includes/strategies/shoutcast/metadata/class-shoutcast-stream-metadata-strategy.php:17
+#: includes/strategies/shoutcast/metadata/class-shoutcast-stream-metadata-strategy.php:33
+#: includes/strategies/shoutcast/metadata/class-shoutcast-stream-metadata-strategy.php:78
+#: includes/strategies/shoutcast/metadata/class-shoutcast-xml-metadata-strategy.php:18
+msgid "Unable to retrieve metadata."
+msgstr "Unable to retrieve metadata."
+
+#: public/class-radio-history-tracker-public.php:119
+msgctxt "post type general name"
+msgid "Radio Streams"
+msgstr "Radio Streams"
+
+#: public/class-radio-history-tracker-public.php:120
+msgctxt "post type singular name"
+msgid "Radio Stream"
+msgstr "Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:121
+msgctxt "admin menu"
+msgid "Radio Streams"
+msgstr "Radio Streams"
+
+#: public/class-radio-history-tracker-public.php:122
+msgctxt "add new on admin bar"
+msgid "Radio Stream"
+msgstr "Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:123
+msgctxt "radio stream"
+msgid "Add New"
+msgstr "Add New"
+
+#: public/class-radio-history-tracker-public.php:124
+msgid "Add New Radio Stream"
+msgstr "Add New Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:125
+msgid "New Radio Stream"
+msgstr "New Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:126
+msgid "Edit Radio Stream"
+msgstr "Edit Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:127
+msgid "View Radio Stream"
+msgstr "View Radio Stream"
+
+#: public/class-radio-history-tracker-public.php:128
+msgid "All Radio Streams"
+msgstr "All Radio Streams"
+
+#: public/class-radio-history-tracker-public.php:129
+msgid "Search Radio Streams"
+msgstr "Search Radio Streams"
+
+#: public/class-radio-history-tracker-public.php:130
+msgid "Parent Radio Streams:"
+msgstr "Parent Radio Streams:"
+
+#: public/class-radio-history-tracker-public.php:131
+msgid "No radio streams found."
+msgstr "No radio streams found."
+
+#: public/class-radio-history-tracker-public.php:132
+msgid "No radio streams found in Trash."
+msgstr "No radio streams found in Trash."
+
+#: public/class-radio-history-tracker-public.php:155
+msgctxt "post type general name"
+msgid "Tracks"
+msgstr "Tracks"
+
+#: public/class-radio-history-tracker-public.php:156
+msgctxt "post type singular name"
+msgid "Track"
+msgstr "Track"
+
+#: public/class-radio-history-tracker-public.php:157
+msgctxt "admin menu"
+msgid "Tracks"
+msgstr "Tracks"
+
+#: public/class-radio-history-tracker-public.php:158
+msgctxt "add new on admin bar"
+msgid "Track"
+msgstr "Track"
+
+#: public/class-radio-history-tracker-public.php:159
+msgctxt "track"
+msgid "Add New"
+msgstr "Add New"
+
+#: public/class-radio-history-tracker-public.php:160
+msgid "Add New Track"
+msgstr "Add New Track"
+
+#: public/class-radio-history-tracker-public.php:161
+msgid "New Track"
+msgstr "New Track"
+
+#: public/class-radio-history-tracker-public.php:162
+msgid "Edit Track"
+msgstr "Edit Track"
+
+#: public/class-radio-history-tracker-public.php:163
+msgid "View Track"
+msgstr "View Track"
+
+#: public/class-radio-history-tracker-public.php:164
+msgid "All Tracks"
+msgstr "All Tracks"
+
+#: public/class-radio-history-tracker-public.php:165
+msgid "Search Tracks"
+msgstr "Search Tracks"
+
+#: public/class-radio-history-tracker-public.php:166
+msgid "Parent Tracks:"
+msgstr "Parent Tracks:"
+
+#: public/class-radio-history-tracker-public.php:167
+msgid "No tracks found."
+msgstr "No tracks found."
+
+#: public/class-radio-history-tracker-public.php:168
+msgid "No tracks found in Trash."
+msgstr "No tracks found in Trash."
+
+#: public/class-radio-history-tracker-public.php:189
+msgctxt "taxonomy general name"
+msgid "Artists"
+msgstr "Artists"
+
+#: public/class-radio-history-tracker-public.php:190
+msgctxt "taxonomy singular name"
+msgid "Artist"
+msgstr "Artist"
+
+#: public/class-radio-history-tracker-public.php:191
+msgid "Search Artists"
+msgstr "Search Artists"
+
+#: public/class-radio-history-tracker-public.php:192
+msgid "All Artists"
+msgstr "All Artists"
+
+#: public/class-radio-history-tracker-public.php:193
+msgid "Parent Artist"
+msgstr "Parent Artist"
+
+#: public/class-radio-history-tracker-public.php:194
+msgid "Parent Artist:"
+msgstr "Parent Artist:"
+
+#: public/class-radio-history-tracker-public.php:195
+msgid "Edit Artist"
+msgstr "Edit Artist"
+
+#: public/class-radio-history-tracker-public.php:196
+msgid "Update Artist"
+msgstr "Update Artist"
+
+#: public/class-radio-history-tracker-public.php:197
+msgid "Add New Artist"
+msgstr "Add New Artist"
+
+#: public/class-radio-history-tracker-public.php:198
+msgid "New Artist Name"
+msgstr "New Artist Name"
+
+#: public/class-radio-history-tracker-public.php:199
+msgid "Artists"
+msgstr "Artists"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wijnberg.dev"
+msgstr "https://wijnberg.dev"
+
+#. Description of the plugin/theme
+msgid ""
+"Radio History Tracker captures and catalogs every track played on your "
+"favorite radio streams into WordPress, complete with play counts and album "
+"art, for easy history tracking and display."
+msgstr ""
+"Radio History Tracker captures and catalogs every track played on your "
+"favorite radio streams into WordPress, complete with play counts and album "
+"art, for easy history tracking and display."
+
+#. Author of the plugin/theme
+msgid "Wijnberg Developments"
+msgstr "Wijnberg Developments"
+
+#. Author URI of the plugin/theme
+msgid "https://wijnberg.dev/"
+msgstr "https://wijnberg.dev/"
+
+#~ msgid "Settings section introduction."
+#~ msgstr "Settings section introduction."
+
+#~ msgid "Radio History Tracker Settings"
+#~ msgstr "Radio History Tracker Settings"
+
+#~ msgid "Played At"
+#~ msgstr "Played At"

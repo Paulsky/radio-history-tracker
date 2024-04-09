@@ -1,0 +1,14 @@
+{
+	"name": "radio-history-tracker",
+	"version": "1.0.0",
+	"description": "Track and manage your radio station's playlist history efficiently with the Radio History Tracker plugin.",
+	"author": "Wijnberg Developments",
+	"scripts": {
+		"format": "wp-scripts format",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"deploy": "npm run format && npm run plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.6.0"
+	}
+}
