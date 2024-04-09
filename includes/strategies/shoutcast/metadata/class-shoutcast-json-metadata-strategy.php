@@ -12,7 +12,7 @@ class Shoutcast_Json_Metadata_Strategy implements Shoutcast_Metadata_Strategy_In
 	}
 
 	public function get_track_history( $url, $username = null, $password = null ) {
-		$response = Metadata_Request::get_with_optional_basic_auth($url, $username, $password);
+		$response = Metadata_Request::get_with_optional_basic_auth( $url, $username, $password );
 
 		if ( is_wp_error( $response ) || wp_remote_retrieve_response_code( $response ) != 200 ) {
 			return new WP_Error( 'shoutcast_metadata_error', __( 'Unable to retrieve metadata.', 'radio-ht' ) );
@@ -23,7 +23,7 @@ class Shoutcast_Json_Metadata_Strategy implements Shoutcast_Metadata_Strategy_In
 
 
 		$tracks = [];
-		if ( ! empty( $data )) {
+		if ( ! empty( $data ) ) {
 			foreach ( $data as $track ) {
 				$timestamp  = (string) $track->playedat;
 				$full_title = $track->title;
@@ -32,9 +32,9 @@ class Shoutcast_Json_Metadata_Strategy implements Shoutcast_Metadata_Strategy_In
 				}
 
 				$track_info = explode( ' - ', $full_title, 2 );
-				$artist = '';
+				$artist     = '';
 				if ( count( $track_info ) > 1 ) {
-					$artist = trim($track_info[0]);
+					$artist = trim( $track_info[0] );
 					$title  = $this->track_manager->get_title( $track_info[1] );
 				} else {
 					$title = $this->track_manager->get_title( $track_info[0] );

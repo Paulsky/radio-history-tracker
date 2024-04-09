@@ -73,7 +73,7 @@ class Shoutcast_Strategy implements Stream_Strategy_Interface {
 				$strategy = new Shoutcast_Steam_Metadata_Strategy();
 				break;
 			default:
-				throw new Exception( __("Unsupported metadata type: ", "radio-ht") . $meta_data_type );
+				throw new Exception( __( "Unsupported metadata type: ", "radio-ht" ) . $meta_data_type );
 		}
 
 		return $strategy;

@@ -17,10 +17,10 @@ class Shoutcast_Steam_Metadata_Strategy implements Shoutcast_Metadata_Strategy_I
 			return new WP_Error( 'shoutcast_metadata_error', __( 'Unable to retrieve metadata.', 'radio-ht' ) );
 		}
 
-		$date      = time();
+		$date       = time();
 		$track_info = explode( ' - ', $full_title, 2 );
-		$artist    = $track_info[0];
-		$title     = $this->track_manager->get_title( $track_info[1] );
+		$artist     = $track_info[0];
+		$title      = $this->track_manager->get_title( $track_info[1] );
 
 		return [ $this->track_manager->format_track( $artist, $title, $date ) ];
 	}

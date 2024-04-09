@@ -89,7 +89,7 @@ class Radio_History_Tracker_Public {
 			'exclude_from_search' => true,
 			'has_archive'         => false,
 			'show_in_rest'        => true,
-			'rewrite'           => [ 'slug' => 'radio-stream' ],
+			'rewrite'             => [ 'slug' => 'radio-stream' ],
 			'menu_icon'           => 'dashicons-media-audio',
 			'labels'              => [
 				'name'               => _x( 'Radio Streams', 'post type general name', 'radio-ht' ),
@@ -125,23 +125,23 @@ class Radio_History_Tracker_Public {
 			'exclude_from_search' => ! $public_visibility,
 			'has_archive'         => $public_visibility,
 			'show_in_rest'        => true,
-			'rewrite'           => [ 'slug' => 'track' ],
+			'rewrite'             => [ 'slug' => 'track' ],
 			'menu_icon'           => 'dashicons-format-audio',
 			'labels'              => [
-				'name'                  => _x('Tracks', 'post type general name', 'radio-ht'),
-				'singular_name'         => _x('Track', 'post type singular name', 'radio-ht'),
-				'menu_name'             => _x('Tracks', 'admin menu', 'radio-ht'),
-				'name_admin_bar'        => _x('Track', 'add new on admin bar', 'radio-ht'),
-				'add_new'               => _x('Add New', 'track', 'radio-ht'),
-				'add_new_item'          => __('Add New Track', 'radio-ht'),
-				'new_item'              => __('New Track', 'radio-ht'),
-				'edit_item'             => __('Edit Track', 'radio-ht'),
-				'view_item'             => __('View Track', 'radio-ht'),
-				'all_items'             => __('All Tracks', 'radio-ht'),
-				'search_items'          => __('Search Tracks', 'radio-ht'),
-				'parent_item_colon'     => __('Parent Tracks:', 'radio-ht'),
-				'not_found'             => __('No tracks found.', 'radio-ht'),
-				'not_found_in_trash'    => __('No tracks found in Trash.', 'radio-ht'),
+				'name'               => _x( 'Tracks', 'post type general name', 'radio-ht' ),
+				'singular_name'      => _x( 'Track', 'post type singular name', 'radio-ht' ),
+				'menu_name'          => _x( 'Tracks', 'admin menu', 'radio-ht' ),
+				'name_admin_bar'     => _x( 'Track', 'add new on admin bar', 'radio-ht' ),
+				'add_new'            => _x( 'Add New', 'track', 'radio-ht' ),
+				'add_new_item'       => __( 'Add New Track', 'radio-ht' ),
+				'new_item'           => __( 'New Track', 'radio-ht' ),
+				'edit_item'          => __( 'Edit Track', 'radio-ht' ),
+				'view_item'          => __( 'View Track', 'radio-ht' ),
+				'all_items'          => __( 'All Tracks', 'radio-ht' ),
+				'search_items'       => __( 'Search Tracks', 'radio-ht' ),
+				'parent_item_colon'  => __( 'Parent Tracks:', 'radio-ht' ),
+				'not_found'          => __( 'No tracks found.', 'radio-ht' ),
+				'not_found_in_trash' => __( 'No tracks found in Trash.', 'radio-ht' ),
 			],
 			'supports'            => [ 'title', 'editor', 'thumbnail' ],
 		];
@@ -150,7 +150,7 @@ class Radio_History_Tracker_Public {
 	}
 
 	public function register_artist_taxonomy() {
-		$options = get_option( $this->plugin_name . '_option_name' );
+		$options           = get_option( $this->plugin_name . '_option_name' );
 		$public_visibility = isset( $options['artist_public_visibility'] ) ? (bool) $options['artist_public_visibility'] : true;
 
 		$args = [
@@ -176,7 +176,7 @@ class Radio_History_Tracker_Public {
 			],
 		];
 
-		register_taxonomy( 'rht_artist', ['rht_track'], $args );
+		register_taxonomy( 'rht_artist', [ 'rht_track' ], $args );
 	}
 
 }

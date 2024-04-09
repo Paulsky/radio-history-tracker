@@ -1,4 +1,4 @@
-.rht-help{
+.rht-help {
     margin-top: calc(8px);
     margin-bottom: 0;
     font-size: 12px;
@@ -6,9 +6,9 @@
     color: rgb(117, 117, 117);
 }
 
-.micromodal__container{
+.micromodal__container {
     width: 600px;
-    max-width:100%;
+    max-width: 100%;
 }
 
 .micromodal table {

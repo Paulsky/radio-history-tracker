@@ -14,12 +14,12 @@
 ?>
 
 <div class="wrap">
-    <h2><?php echo esc_html__('Radio History Tracker settings', 'radio-ht'); ?></h2>
+    <h2><?php echo esc_html__( 'Radio History Tracker settings', 'radio-ht' ); ?></h2>
     <form action="options.php" method="post">
 		<?php
-		settings_fields($this->plugin_name . '_options_group');
-		do_settings_sections($this->plugin_name);
-		submit_button(__('Save Changes', 'radio-ht'));
+		settings_fields( $this->plugin_name . '_options_group' );
+		do_settings_sections( $this->plugin_name );
+		submit_button( __( 'Save Changes', 'radio-ht' ) );
 		?>
     </form>
 </div>

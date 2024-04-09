@@ -80,7 +80,7 @@ class Track_Manager {
 		if ( empty( $title ) ) {
 			return false;
 		}
-		if ( $title !== __( 'Unknown title', 'radio-ht' ) ) {
+		if ( $title === __( 'Unknown title', 'radio-ht' ) ) {
 			return false;
 		}
 

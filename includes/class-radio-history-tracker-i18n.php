@@ -43,5 +43,4 @@ class Radio_History_Tracker_i18n {
 	}
 
 
-
 }
