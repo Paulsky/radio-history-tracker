@@ -55,16 +55,16 @@ class Radio_History_Tracker_Public {
 
 	}
 
-//	/**
-//	 * Register the stylesheets for the public-facing side of the site.
-//	 *
-//	 * @since    1.0.0
-//	 */
-//	public function enqueue_styles() {
-//
-//		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/radio-history-tracker-public.css', array(), $this->version, 'all' );
-//
-//	}
+	/**
+	 * Register the stylesheets for the public-facing side of the site.
+	 *
+	 * @since    1.0.0
+	 */
+	public function enqueue_styles() {
+
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/radio-history-tracker-public.css', array(), $this->version, 'all' );
+
+	}
 //
 //	/**
 //	 * Register the JavaScript for the public-facing side of the site.
@@ -177,6 +177,38 @@ class Radio_History_Tracker_Public {
 		];
 
 		register_taxonomy( 'rht_artist', [ 'rht_track' ], $args );
+	}
+
+	public function register_shortcodes() {
+		add_shortcode( 'latest_tracks', array( $this, 'latest_tracks_shortcode' ) );
+	}
+
+	public function latest_tracks_shortcode( $atts ) {
+
+		$atts = shortcode_atts( array(
+			'number' => 10,
+		), $atts, 'latest_tracks' );
+
+		$tracks_query = new WP_Query( array(
+			'post_type'      => 'rht_track',
+			'posts_per_page' => intval( $atts['number'] ),
+			'meta_key'       => 'rht_track_latest_played_at',
+			'orderby'        => 'meta_value_num',
+			'order'          => 'DESC',
+		) );
+
+		ob_start();
+
+		if ( $tracks_query->have_posts() ) {
+			include 'partials/latest-tracks-list.php';
+		} else {
+			echo '<div class="no-tracks-found">' . esc_html__( 'No recently played tracks found.', 'radio-ht' ) . '</div>';
+		}
+
+		wp_reset_postdata();
+
+		return ob_get_clean();
+
 	}
 
 }

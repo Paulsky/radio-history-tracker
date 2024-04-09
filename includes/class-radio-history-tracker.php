@@ -189,13 +189,15 @@ class Radio_History_Tracker {
 
 		$plugin_public = new Radio_History_Tracker_Public( $this->get_plugin_name(), $this->get_version() );
 
-//		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 //		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 		//11 because of dynamic CPT settings
 		$this->loader->add_action( 'init', $plugin_public, 'register_radio_stream_cpt', 11 );
 		$this->loader->add_action( 'init', $plugin_public, 'register_track_cpt', 11 );
 		$this->loader->add_action( 'init', $plugin_public, 'register_artist_taxonomy', 11 );
+		
+		$this->loader->add_action( 'init', $plugin_public, 'register_shortcodes' );
 
 	}
 

@@ -1,3 +1,4 @@
+
 # Radio History Tracker
 
 Track and manage your radio station's playlist history efficiently with the Radio History Tracker plugin. This plugin  
@@ -54,6 +55,16 @@ After activating the plugin, follow these steps to configure and start using the
 
 Now you're ready to track and manage your radio station's playlist history with ease!
 
+### Shortcode
+
+The Radio History Tracker plugin includes a shortcode that allows you to display the latest trackson pages and posts. Use the `[latest_tracks]` shortcode with an optional parameter `number` to specify the number of tracks to display. For example:
+
+
+
+`[latest_tracks number="10"]`
+
+This will display the latest 10 tracks, sorted by the time they were last played.
+
 ### Cron setup (optional)
 
 For enhanced accuracy and reliability, consider disabling the WordPress cron system and setting up a real cron job on  
@@ -74,9 +85,7 @@ consistently, ensuring the smooth operation of your radio station's playlist his
 
 ### Permalinks troubleshooting
 
-If you encounter issues with permalinks not working, try resaving the permalinks within WordPress. To do this, navigate
-to `Settings` > `Permalinks` in the WordPress admin dashboard, then simply click the "Save Changes" button without
-making any changes. This should refresh the permalinks and resolve any issues related to URL routing.
+If you encounter issues with permalinks not working properly after installing the plugin, try resetting the permalinks within WordPress. To do this, navigate to `Settings` > `Permalinks` in the WordPress admin dashboard, then simply click the "Save Changes" button without making any changes. This should refresh the permalinks and resolve any issues related to URL routing.
 
 ## Compatibility
 
@@ -95,14 +104,12 @@ issue or contacting us through our website. You are also welcome to submit a pul
 
 ## Contributing
 
-Your contributions are welcome! If you'd like to contribute to the project, feel free to fork the repository, make
-your  
+Your contributions are welcome! If you'd like to contribute to the project, feel free to fork the repository, make your  
 changes, and submit a pull request.
 
 ## Development and deployment
 
-To prepare your development work for submission, ensure you have `npm` installed and run `npm run deploy`. This
-command  
+To prepare your development work for submission, ensure you have `npm` installed and run `npm run deploy`. This command  
 packages your changes into a `.zip` file, ready for deployment.
 
 ### Steps:
