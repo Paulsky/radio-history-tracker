@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Radio History Tracker\n"
-"POT-Creation-Date: 2024-04-09 11:26+0200\n"
-"PO-Revision-Date: 2024-04-09 11:27+0200\n"
+"POT-Creation-Date: 2024-04-09 14:43+0200\n"
+"PO-Revision-Date: 2024-04-09 14:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -20,6 +20,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: admin/vendor\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
 
 #: admin/class-radio-history-tracker-admin.php:102
 msgid "No data available."
@@ -248,173 +249,177 @@ msgstr "Unsupported metadata type: "
 msgid "Unable to retrieve metadata."
 msgstr "Unable to retrieve metadata."
 
-#: public/class-radio-history-tracker-public.php:119
+#: public/class-radio-history-tracker-public.php:95
 msgctxt "post type general name"
 msgid "Radio Streams"
 msgstr "Radio Streams"
 
-#: public/class-radio-history-tracker-public.php:120
+#: public/class-radio-history-tracker-public.php:96
 msgctxt "post type singular name"
 msgid "Radio Stream"
 msgstr "Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:121
+#: public/class-radio-history-tracker-public.php:97
 msgctxt "admin menu"
 msgid "Radio Streams"
 msgstr "Radio Streams"
 
-#: public/class-radio-history-tracker-public.php:122
+#: public/class-radio-history-tracker-public.php:98
 msgctxt "add new on admin bar"
 msgid "Radio Stream"
 msgstr "Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:123
+#: public/class-radio-history-tracker-public.php:99
 msgctxt "radio stream"
 msgid "Add New"
 msgstr "Add New"
 
-#: public/class-radio-history-tracker-public.php:124
+#: public/class-radio-history-tracker-public.php:100
 msgid "Add New Radio Stream"
 msgstr "Add New Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:125
+#: public/class-radio-history-tracker-public.php:101
 msgid "New Radio Stream"
 msgstr "New Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:126
+#: public/class-radio-history-tracker-public.php:102
 msgid "Edit Radio Stream"
 msgstr "Edit Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:127
+#: public/class-radio-history-tracker-public.php:103
 msgid "View Radio Stream"
 msgstr "View Radio Stream"
 
-#: public/class-radio-history-tracker-public.php:128
+#: public/class-radio-history-tracker-public.php:104
 msgid "All Radio Streams"
 msgstr "All Radio Streams"
 
-#: public/class-radio-history-tracker-public.php:129
+#: public/class-radio-history-tracker-public.php:105
 msgid "Search Radio Streams"
 msgstr "Search Radio Streams"
 
-#: public/class-radio-history-tracker-public.php:130
+#: public/class-radio-history-tracker-public.php:106
 msgid "Parent Radio Streams:"
 msgstr "Parent Radio Streams:"
 
-#: public/class-radio-history-tracker-public.php:131
+#: public/class-radio-history-tracker-public.php:107
 msgid "No radio streams found."
 msgstr "No radio streams found."
 
-#: public/class-radio-history-tracker-public.php:132
+#: public/class-radio-history-tracker-public.php:108
 msgid "No radio streams found in Trash."
 msgstr "No radio streams found in Trash."
 
-#: public/class-radio-history-tracker-public.php:155
+#: public/class-radio-history-tracker-public.php:131
 msgctxt "post type general name"
 msgid "Tracks"
 msgstr "Tracks"
 
-#: public/class-radio-history-tracker-public.php:156
+#: public/class-radio-history-tracker-public.php:132
 msgctxt "post type singular name"
 msgid "Track"
 msgstr "Track"
 
-#: public/class-radio-history-tracker-public.php:157
+#: public/class-radio-history-tracker-public.php:133
 msgctxt "admin menu"
 msgid "Tracks"
 msgstr "Tracks"
 
-#: public/class-radio-history-tracker-public.php:158
+#: public/class-radio-history-tracker-public.php:134
 msgctxt "add new on admin bar"
 msgid "Track"
 msgstr "Track"
 
-#: public/class-radio-history-tracker-public.php:159
+#: public/class-radio-history-tracker-public.php:135
 msgctxt "track"
 msgid "Add New"
 msgstr "Add New"
 
-#: public/class-radio-history-tracker-public.php:160
+#: public/class-radio-history-tracker-public.php:136
 msgid "Add New Track"
 msgstr "Add New Track"
 
-#: public/class-radio-history-tracker-public.php:161
+#: public/class-radio-history-tracker-public.php:137
 msgid "New Track"
 msgstr "New Track"
 
-#: public/class-radio-history-tracker-public.php:162
+#: public/class-radio-history-tracker-public.php:138
 msgid "Edit Track"
 msgstr "Edit Track"
 
-#: public/class-radio-history-tracker-public.php:163
+#: public/class-radio-history-tracker-public.php:139
 msgid "View Track"
 msgstr "View Track"
 
-#: public/class-radio-history-tracker-public.php:164
+#: public/class-radio-history-tracker-public.php:140
 msgid "All Tracks"
 msgstr "All Tracks"
 
-#: public/class-radio-history-tracker-public.php:165
+#: public/class-radio-history-tracker-public.php:141
 msgid "Search Tracks"
 msgstr "Search Tracks"
 
-#: public/class-radio-history-tracker-public.php:166
+#: public/class-radio-history-tracker-public.php:142
 msgid "Parent Tracks:"
 msgstr "Parent Tracks:"
 
-#: public/class-radio-history-tracker-public.php:167
+#: public/class-radio-history-tracker-public.php:143
 msgid "No tracks found."
 msgstr "No tracks found."
 
-#: public/class-radio-history-tracker-public.php:168
+#: public/class-radio-history-tracker-public.php:144
 msgid "No tracks found in Trash."
 msgstr "No tracks found in Trash."
 
-#: public/class-radio-history-tracker-public.php:189
+#: public/class-radio-history-tracker-public.php:165
 msgctxt "taxonomy general name"
 msgid "Artists"
 msgstr "Artists"
 
-#: public/class-radio-history-tracker-public.php:190
+#: public/class-radio-history-tracker-public.php:166
 msgctxt "taxonomy singular name"
 msgid "Artist"
 msgstr "Artist"
 
-#: public/class-radio-history-tracker-public.php:191
+#: public/class-radio-history-tracker-public.php:167
 msgid "Search Artists"
 msgstr "Search Artists"
 
-#: public/class-radio-history-tracker-public.php:192
+#: public/class-radio-history-tracker-public.php:168
 msgid "All Artists"
 msgstr "All Artists"
 
-#: public/class-radio-history-tracker-public.php:193
+#: public/class-radio-history-tracker-public.php:169
 msgid "Parent Artist"
 msgstr "Parent Artist"
 
-#: public/class-radio-history-tracker-public.php:194
+#: public/class-radio-history-tracker-public.php:170
 msgid "Parent Artist:"
 msgstr "Parent Artist:"
 
-#: public/class-radio-history-tracker-public.php:195
+#: public/class-radio-history-tracker-public.php:171
 msgid "Edit Artist"
 msgstr "Edit Artist"
 
-#: public/class-radio-history-tracker-public.php:196
+#: public/class-radio-history-tracker-public.php:172
 msgid "Update Artist"
 msgstr "Update Artist"
 
-#: public/class-radio-history-tracker-public.php:197
+#: public/class-radio-history-tracker-public.php:173
 msgid "Add New Artist"
 msgstr "Add New Artist"
 
-#: public/class-radio-history-tracker-public.php:198
+#: public/class-radio-history-tracker-public.php:174
 msgid "New Artist Name"
 msgstr "New Artist Name"
 
-#: public/class-radio-history-tracker-public.php:199
+#: public/class-radio-history-tracker-public.php:175
 msgid "Artists"
 msgstr "Artists"
+
+#: public/class-radio-history-tracker-public.php:205
+msgid "No recently played tracks found."
+msgstr "No recently played tracks found."
 
 #. Plugin URI of the plugin/theme
 msgid "https://wijnberg.dev"
@@ -422,13 +427,11 @@ msgstr "https://wijnberg.dev"
 
 #. Description of the plugin/theme
 msgid ""
-"Radio History Tracker captures and catalogs every track played on your "
-"favorite radio streams into WordPress, complete with play counts and album "
-"art, for easy history tracking and display."
+"Track and manage your radio station's playlist history efficiently with the "
+"Radio History Tracker plugin."
 msgstr ""
-"Radio History Tracker captures and catalogs every track played on your "
-"favorite radio streams into WordPress, complete with play counts and album "
-"art, for easy history tracking and display."
+"Track and manage your radio station's playlist history efficiently with the "
+"Radio History Tracker plugin."
 
 #. Author of the plugin/theme
 msgid "Wijnberg Developments"
@@ -437,6 +440,15 @@ msgstr "Wijnberg Developments"
 #. Author URI of the plugin/theme
 msgid "https://wijnberg.dev/"
 msgstr "https://wijnberg.dev/"
+
+#~ msgid ""
+#~ "Radio History Tracker captures and catalogs every track played on your "
+#~ "favorite radio streams into WordPress, complete with play counts and "
+#~ "album art, for easy history tracking and display."
+#~ msgstr ""
+#~ "Radio History Tracker captures and catalogs every track played on your "
+#~ "favorite radio streams into WordPress, complete with play counts and "
+#~ "album art, for easy history tracking and display."
 
 #~ msgid "Settings section introduction."
 #~ msgstr "Settings section introduction."
