@@ -87,7 +87,7 @@ class Radio_History_Tracker_Public {
 			'show_ui'             => true,
 			'show_in_menu'        => true,
 			'exclude_from_search' => true,
-			'has_archive'         => false,
+			'has_archive'         => $public_visibility,
 			'show_in_rest'        => true,
 			'rewrite'             => [ 'slug' => 'radio-stream' ],
 			'menu_icon'           => 'dashicons-media-audio',
@@ -154,14 +154,15 @@ class Radio_History_Tracker_Public {
 		$public_visibility = isset( $options['artist_public_visibility'] ) ? (bool) $options['artist_public_visibility'] : true;
 
 		$args = [
-			'public'            => $public_visibility,
-			'hierarchical'      => true,
-			'show_ui'           => true,
-			'show_admin_column' => true,
-			'query_var'         => true,
-			'show_in_rest'      => true,
-			'rewrite'           => [ 'slug' => 'artist' ],
-			'labels'            => [
+			'public'             => $public_visibility,
+			'publicly_queryable' => $public_visibility,
+			'hierarchical'       => true,
+			'show_ui'            => true,
+			'show_admin_column'  => true,
+			'query_var'          => true,
+			'show_in_rest'       => true,
+			'rewrite'            => [ 'slug' => 'artist' ],
+			'labels'             => [
 				'name'              => _x( 'Artists', 'taxonomy general name', 'radio-ht' ),
 				'singular_name'     => _x( 'Artist', 'taxonomy singular name', 'radio-ht' ),
 				'search_items'      => __( 'Search Artists', 'radio-ht' ),
