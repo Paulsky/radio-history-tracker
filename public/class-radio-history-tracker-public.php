@@ -182,6 +182,7 @@ class Radio_History_Tracker_Public {
 
 	public function register_shortcodes() {
 		add_shortcode( 'latest_tracks', array( $this, 'latest_tracks_shortcode' ) );
+		add_shortcode( 'most_played_tracks', array( $this, 'most_played_tracks_shortcode' ) );
 	}
 
 	public function latest_tracks_shortcode( $atts ) {
@@ -202,6 +203,34 @@ class Radio_History_Tracker_Public {
 
 		if ( $tracks_query->have_posts() ) {
 			include 'partials/latest-tracks-list.php';
+		} else {
+			echo '<div class="no-tracks-found">' . esc_html__( 'No recently played tracks found.', 'radio-ht' ) . '</div>';
+		}
+
+		wp_reset_postdata();
+
+		return ob_get_clean();
+
+	}
+
+	public function most_played_tracks_shortcode( $atts ) {
+
+		$atts = shortcode_atts( array(
+			'number' => 10,
+		), $atts, 'most_played_tracks' );
+
+		$tracks_query = new WP_Query( array(
+			'post_type'      => 'rht_track',
+			'posts_per_page' => intval( $atts['number'] ),
+			'meta_key'       => 'rht_track_played_count',
+			'orderby'        => 'meta_value_num',
+			'order'          => 'DESC',
+		) );
+
+		ob_start();
+
+		if ( $tracks_query->have_posts() ) {
+			include 'partials/most-played-tracks-list.php';
 		} else {
 			echo '<div class="no-tracks-found">' . esc_html__( 'No recently played tracks found.', 'radio-ht' ) . '</div>';
 		}

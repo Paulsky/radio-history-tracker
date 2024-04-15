@@ -55,15 +55,25 @@ After activating the plugin, follow these steps to configure and start using the
 
 Now you're ready to track and manage your radio station's playlist history with ease!
 
-### Shortcode
+### Shortcodes
 
-The Radio History Tracker plugin includes a shortcode that allows you to display the latest trackson pages and posts. Use the `[latest_tracks]` shortcode with an optional parameter `number` to specify the number of tracks to display. For example:
+The Radio History Tracker plugin includes several shortcodes that allow you to display track information on your pages and posts.
 
+#### Latest tracks
 
+Use the `[latest_tracks]` shortcode to show the most recently played tracks. You can specify how many tracks to display with the `number` parameter. For example:
 
 `[latest_tracks number="10"]`
 
-This will display the latest 10 tracks, sorted by the time they were last played.
+This displays the latest 10 tracks, sorted by the time they were last played.
+
+#### Most played tracks
+
+To display the tracks that have been played the most, use the `[most_played_tracks]` shortcode. You can also specify the number of tracks to show by using the `number` parameter. For example:
+
+`[most_played_tracks number="10"]`
+
+This will list the top 10 most played tracks.
 
 ### Cron setup (optional)
 
