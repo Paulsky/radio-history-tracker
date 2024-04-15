@@ -144,6 +144,7 @@ class Radio_History_Tracker_Public {
 				'not_found_in_trash' => __( 'No tracks found in Trash.', 'radio-ht' ),
 			],
 			'supports'            => [ 'title', 'editor', 'thumbnail' ],
+			'taxonomies'          => array( 'rht_artist' ),
 		];
 
 		register_post_type( 'rht_track', $args );
@@ -156,8 +157,9 @@ class Radio_History_Tracker_Public {
 		$args = [
 			'public'             => $public_visibility,
 			'publicly_queryable' => $public_visibility,
-			'hierarchical'       => true,
+			'hierarchical'       => false,
 			'show_ui'            => true,
+			'show_in_menu'       => true,
 			'show_admin_column'  => true,
 			'query_var'          => true,
 			'show_in_rest'       => true,
